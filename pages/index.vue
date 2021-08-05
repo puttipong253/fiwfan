@@ -97,37 +97,38 @@
 
         </div>
 
-        <div class='bg-gradient-to-b from-[#D554A9] to-[#FAB4CE] h-[25rem] xl:h-[29rem]'>
-            <div class='container mx-auto py-7 w-full'>
+        <div class='bg-gradient-to-b from-[#D554A9] to-[#FAB4CE] h-[19rem] xl:h-[29rem]'>
+            <div class='container mx-auto py-4 lg:py-7 w-full'>
                 <div class='flex justify-between px-5 xl:px-[6rem] text-white xl:mb-5'>
                     <div class='flex'>
                         <svg-icon
                             name='bi_bookmark-star-fill'
-                            width='30'
-                            height='30'
+                            width='28'
+                            height='28'
                             class='text-pink-2'
                         />
-                        <span class='ml-3'>สังกัด</span>
+                        <span class='ml-3 text-sm lg:text-lg'>สังกัด</span>
                     </div>
-                    <div>
+                    <div class='ml-3 text-sm lg:text-lg'>
                         ดูเพิ่มเติม
                     </div>
                 </div>
 
                 <swiper ref='swiper' :options='swiperOption' class='header'>
                     <swiper-slide>
-                        <div class='xl:px-[6rem] px-10 py-5'>
-                            <div class='grid grid-cols-3 lg:grid-cols-6 gap-2 xl:gap-[2.5rem]'>
+                        <div class='xl:px-[6rem] px-10 py-5 w-full'>
+                            <div class='grid grid-cols-3 lg:grid-cols-6 gap-[0.75rem] lg:gap-[2.5rem] w-full'>
                                 <div v-for='(item,index) in guildThree()' :key='index'
-                                     class='lg:hidden bg-white w-[90px] h-[90px] lg:w-[150px] lg:h-[150px] py-3 px-5 rounded-xl w-full hover:shadow-xl transform transition duration-150 ease-in-out hover:-translate-y-2'>
+                                     class='mx-auto lg:hidden bg-white w-[90px] h-[90px] lg:w-[150px] lg:h-[150px] py-3 px-5 rounded-xl w-full hover:shadow-xl transform transition duration-150 ease-in-out hover:xl:-translate-y-2'>
                                     <div class='flex justify-center'>
                                         <img :src='item.image' alt='' />
                                     </div>
-                                    <span class='text-[#33333] text-xs lg:text-sm flex justify-center mt-1'>{{ item.name
-                                        }}</span>
+                                    <span class='text-[#33333] text-xs lg:text-sm flex justify-center mt-1'>
+                                        {{ item.name }}
+                                    </span>
                                 </div>
                                 <div v-for='(item,index) in guildSix()' :key='index'
-                                     class='hidden lg:block bg-white w-[90px] h-[90px] lg:w-[150px] lg:h-[150px] py-3 px-5 rounded-xl w-full hover:shadow-xl transform transition duration-150 ease-in-out hover:-translate-y-2'>
+                                     class='mx-auto hidden lg:block bg-white w-[90px] h-[90px] lg:w-[150px] lg:h-[150px] py-3 px-5 rounded-xl w-full hover:shadow-xl transform transition duration-150 ease-in-out hover:xl:-translate-y-2'>
                                     <div class='flex justify-center'>
                                         <img :src='item.image' alt='' />
                                     </div>
@@ -138,10 +139,19 @@
                         </div>
                     </swiper-slide>
                     <swiper-slide>
-                        <div class='xl:px-[6rem] px-10 py-5'>
-                            <div class='grid grid-cols-3 lg:grid-cols-6 gap-2 xl:gap-[2.5rem]'>
+                        <div class='xl:px-[6rem] px-10 py-5 w-full'>
+                            <div class='grid grid-cols-3 lg:grid-cols-6 gap-[0.75rem] lg:gap-[2.5rem] w-full'>
                                 <div v-for='(item,index) in guildThree()' :key='index'
-                                     class='bg-white w-[90px] h-[90px] lg:w-[150px] lg:h-[150px] py-3 px-5 rounded-xl w-full hover:shadow-xl transform transition duration-150 ease-in-out hover:-translate-y-2'>
+                                     class='mx-auto lg:hidden bg-white w-[90px] h-[90px] lg:w-[150px] lg:h-[150px] py-3 px-5 rounded-xl w-full hover:shadow-xl transform transition duration-150 ease-in-out hover:xl:-translate-y-2'>
+                                    <div class='flex justify-center'>
+                                        <img :src='item.image' alt='' />
+                                    </div>
+                                    <span class='text-[#33333] text-xs lg:text-sm flex justify-center mt-1'>
+                                        {{ item.name }}
+                                    </span>
+                                </div>
+                                <div v-for='(item,index) in guildSix()' :key='index'
+                                     class='mx-auto hidden lg:block bg-white w-[90px] h-[90px] lg:w-[150px] lg:h-[150px] py-3 px-5 rounded-xl w-full hover:shadow-xl transform transition duration-150 ease-in-out hover:xl:-translate-y-2'>
                                     <div class='flex justify-center'>
                                         <img :src='item.image' alt='' />
                                     </div>
@@ -157,23 +167,23 @@
             </div>
         </div>
 
-        <div class='container mx-auto py-7 px-10 xl:px-[6rem] mb-5'>
-            <div class='bg-pink-1 text-center py-6 w-full'>
-                <div class='xl:px-[14rem] w-full'>
-                    <div class='text-lg text-pink-2 mb-3 font-medium'>Fiwfan.com สำหรับผู้ที่มีอายุ 20
+        <div class='container mx-auto py-4 xl:py-7 px-10 xl:px-[6rem] mb-5'>
+            <div class='bg-pink-1 text-center py-4 lg:py-6 w-full'>
+                <div class='px-2 xl:px-[14rem] w-full'>
+                    <div class='text-sm lg:text-lg text-pink-2 mb-3 font-medium'>Fiwfan.com สำหรับผู้ที่มีอายุ 20
                         ปีขึ้นไปเท่านั้น
                     </div>
-                    <div class='text-sm text-pink-2'>เราเป็น Social Media Platform
+                    <div class='text-xs text-pink-2'>เราเป็น Social Media Platform
                         ที่ให้บริการเช่าพื้นที่สำหรับการโฆษณาเท่านั้น ไม่มีการซื้อบริการทางเพศ ไม่มีการเก็บค่าใช้จ่ายใด
                         ๆ ทั้งสิ้น หากมีการให้โอนเงินเพื่อซื้อบริการ กรุณาอย่าโอน หากมีการเก็บค่าจ้าง กรุณาติดต่อน้อง ๆ
                         โดยตรงจากบัญชีไลน์ที่ปรากฎในแต่ละหน้า Profile ของแต่ละบุคคล
                     </div>
                 </div>
             </div>
-            <div class='mt-5 w-full'>
+            <div class='mt-5'>
                 <div
-                    class='w-full flex items-center justify-between bg-gradient-to-b from-pink-3 to-[#FAB4CE] py-3 rounded-md px-3 text-white'>
-                    <div class='flex'>
+                    class='w-full flex flex-col lg:flex-row items-center lg:justify-between bg-gradient-to-b from-pink-3 to-[#FAB4CE] py-3 rounded-md px-3 text-white'>
+                    <div class='flex mb-3 lg:mb-0'>
                         <svg-icon
                             name='bx_bxs-star'
                             width='26'
@@ -181,7 +191,7 @@
                         />
                         <span class='ml-2'>รายการทั้งหมด 535 รายการ</span>
                     </div>
-                    <div class='relative w-full'>
+                    <div class='relative'>
                         <input
                             class='w-[15rem] text-sm rounded-md px-3 py-2 bg-dark-1 focus:outline-none font-light text-pink-2 placeholder-pink-2'
                             placeholder='ให้เราช่วยค้นหา...' />
@@ -197,8 +207,8 @@
             <div class='mt-4 grid grid-cols-1 lg:grid-cols-4 gap-[1.25rem]'>
                 <div v-for='(item,index) in userData' :key='index'>
                     <div
-                        class='relative w-[16rem] h-[22.5rem] bg-white shadow-md rounded-md cursor-pointer hover:shadow-xl transform transition duration-150 ease-in-out hover:-translate-y-2'>
-                        <img :src='item.image' alt=''>
+                        class='relative w-full lg:w-[16rem] h-full lg:h-[22.5rem] bg-white shadow-md rounded-md cursor-pointer hover:shadow-xl transform transition duration-150 ease-in-out hover:lg:-translate-y-2'>
+                        <img :src='item.image' alt='' width='100%'>
                         <div class='absolute top-0 left-0 px-3'>
                             <div
                                 class='flex items-center text-sm px-3 opacity-[0.8] py-1 bg-gradient-to-b from-[#D554A9] to-[#FAB4CE] mt-2 rounded-full'>
@@ -505,7 +515,7 @@ export default {
         },
         guildThree() {
             const data = []
-            for (let i = 0; i < 9; i++) {
+            for (let i = 0; i < 6; i++) {
                 data.push(this.affiliation[i])
             }
             return data
@@ -523,6 +533,7 @@ export default {
 
 <style lang='scss' scoped>
 .prv {
+    width: 15px;
     color: white;
 }
 
